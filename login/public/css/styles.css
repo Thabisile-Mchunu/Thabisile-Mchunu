@@ -1,0 +1,124 @@
+
+::selection {
+  background-color: gray;
+}
+  
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 400px;
+  height: 430px;
+  background-image: linear-gradient(to bottom, #424242, #212121);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.reg-form {
+  width: 400px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #424242, #212121);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+  
+.title {
+  color: wheat;
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+
+.input {
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  width: 20rem;
+  background-color: inherit;
+  color: wheat;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid wheat;
+  transition: all 400ms;
+}
+.input:hover {
+  background-color: #424242;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+.flex-row > div > label {
+  font-size: 14px;
+  color: wheat;
+  font-weight: 500;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: wheat;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+}
+
+.p {
+  text-align: center;
+  color: wheat;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.btn {
+  height: 3rem;
+  width: 20rem;
+  margin-top: 3rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 400ms;
+  cursor: pointer;
+  box-shadow:
+    0 0 10px antiquewhite,
+    0 0 10px antiquewhite;
+}
+.btn:hover {
+  background-color: antiquewhite;
+  box-shadow: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+}

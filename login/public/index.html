@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--the css stylesheet-->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <!-- login form --> 
+        <div  class="container">
+            <div id="login-message" class="message hidden"></div>
+            <div id="login-form">
+                <form class="form" onsubmit="submitLogin(event)">
+                  <p class="title">Login</p>
+                  <input placeholder="Email" id="username" class="username input" type="text" required/>
+                  <input placeholder="Password" id="password" class="password input" type="password" required/>
+                  <div class="flex-row">
+                    <span class="span">Forgot password?</span>
+                  </div>
+                  <button class="btn" type="submit">Login</button>
+                  <p class="p">Don't have an account? <span class="span" onclick="showRegister()">Register</span></p>
+                </form>
+            </div>
+            <div id="register-form" class="hidden">
+                <div id="register-message" class="message hidden"></div>
+                <form class="reg-form" onsubmit="submitRegister(event)">
+                  <p class="title">Registration</p>
+                  <input placeholder="First name" id="firstname" class="username input" type="text" required/>
+                  <input placeholder="Last name" id="lastname" class="username input" type="text" required/>
+                  <input placeholder="Date of Birth" id="dob" class="DOB input" type="date" required/>
+                  <input placeholder="Street Address" id="address" class="address input" type="text" />
+                  <input placeholder="City" id="city" class="city input" type="text" />
+                  <input placeholder="Code" id="code" class="code input" type="text" />
+                  <input placeholder="Email" id="register-email" class="code input" type="email" required/>
+                  <input placeholder="Password" id="register-password" class="password input" type="password" required/>
+                  <input placeholder="Confirm Password" id="register-confirm-password" class="password input" type="password" required/>
+                  
+                  <button class="btn" type="submit">Register</button>
+                  <p class="p">Already have an account? <span class="span" onclick="showLogin()">Login</span></p>
+                </form>
+            </div>
+        </div>
+        
+    <!-- add the javascript files here-->
+    <script src="js/script.js"></script>
+    </body>
+</html>
