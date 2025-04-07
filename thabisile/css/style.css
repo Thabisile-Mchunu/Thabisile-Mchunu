@@ -1,5 +1,5 @@
 /*
-
+Thabisile portfolio styles
 */
 
 * {
@@ -28,7 +28,7 @@ body {
   padding: 15px 0;
 }
 
-  /* Container for alignment */
+  /* navbar container for alignment */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,7 @@ body {
     color: #ccc; /* Hover color */
 }
 
-  /* Menu styling */
+  /* navbar menu */
 .navbar-menu ul {
   display: flex;
   list-style: none;
@@ -88,7 +88,7 @@ body {
     font-weight: bold;
 }
 
-/* Page section styles */
+/* site look styles */
 .page-section {
     min-height: 45vh;
     display: flex;
@@ -172,7 +172,7 @@ body {
     transition: transform 1s ease;
 }
 
-/* Show the line when timeline is in view */
+/* Show the line*/
 .timeline.in-view::before {
     transform: scaleY(1);
 }
@@ -184,7 +184,7 @@ body {
 }
 
 .timeline-item:last-child {
-    margin-bottom: 20px; /* Adjust space after last item */
+    margin-bottom: 20px; 
 }
 
 .timeline-dot {
@@ -253,7 +253,6 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(233, 228, 228, 0.6);
-    /*color: white;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,12 +395,3 @@ footer{
     text-align: center;
     color: rosybrown;
 }
-
-
-/* Different background colors for sections 
-#education { background-color: #f8f9fa; }
-#skills { background-color: #e9ecef; }
-#experience { background-color: #dee2e6; }
-#portfolio { background-color: #ced4da; }
-#contact { background-color: #adb5bd; }
-*/
