@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Timeline animation on scroll
+    // Experience timeline animation on scroll
     const timeline = document.querySelector('.timeline');
     const timelineItems = document.querySelectorAll('.timeline-item');
 
@@ -76,12 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const firstItem = items[0];
             const lastItem = items[items.length - 1];
             
-            // Get positions relative to document, not viewport
+            // Get item positions relative to document
             const firstItemPos = firstItem.getBoundingClientRect().top + window.pageYOffset;
             const lastItemPos = lastItem.getBoundingClientRect().top + window.pageYOffset;
             const timelinePos = timeline.getBoundingClientRect().top + window.pageYOffset;
             
-            // Calculate positions relative to timeline container
+            // Calculate item positions relative to timeline container
             const lineTop = firstItem.querySelector('.timeline-dot').getBoundingClientRect().top - timeline.getBoundingClientRect().top;
             const lineBottom = lastItem.querySelector('.timeline-dot').getBoundingClientRect().top - timeline.getBoundingClientRect().top;
             
